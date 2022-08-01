@@ -3,6 +3,10 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 import * as bootstrap from "bootstrap"
 
+// import "jquery"
+
+
+
 // --------
   // Popovers
   // --------
@@ -11,3 +15,10 @@ import * as bootstrap from "bootstrap"
     .forEach(popover => {
       new bootstrap.Popover(popover)
     })
+
+
+
+      $("#btn1").click(function(){
+          $(this).css('background-color', 'red');
+          alert('Мир jQuery');
+      });
